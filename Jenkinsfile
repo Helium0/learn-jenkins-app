@@ -18,7 +18,11 @@ pipeline {
                 npm run build
                 ls -la
                 '''
+                }
+            }
+
+            stage('Test') {
+                sh 'echo "Test stage"'
             }
         }
     }
-}
